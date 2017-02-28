@@ -1,0 +1,11 @@
+﻿#films {
+    margin-left: 500px;
+}
+
+#avatar {
+    list-style-image: url(http://www.impawards.com/2009/posters/avatar.jpg);
+}
+
+#inception {
+    list-style-image: url(http://www.impawards.com/2010/posters/inception.jpg);
+}

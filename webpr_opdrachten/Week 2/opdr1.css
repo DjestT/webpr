@@ -1,0 +1,29 @@
+﻿body {
+            background-color: #939393;
+        }
+
+        #muziekgenres {
+            list-style-type: upper-roman;
+            float: left;
+        }
+        
+        #muziekgenres ol {
+            list-style-type: upper-alpha;
+        }
+
+        #muziekgenres ol ol {
+            list-style-type: decimal;
+        }
+
+        #rock {
+            background-color: red;
+        }
+
+        #elektronica {
+            background-color: black;
+            color: white;
+        }
+
+        #imgMuziek {
+            float: left;
+        }

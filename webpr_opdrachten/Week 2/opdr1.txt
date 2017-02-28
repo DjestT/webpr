@@ -1,0 +1,25 @@
+﻿Inline style sheets
+Voordelen:
+* Hoogste prioriteit wanneer stijl toegepast wordt
+Nadelen:
+* Zeer slecht leesbaar
+* Veel herhaling bij gelijkaardige elementen
+* Enkel van toepassing op het huidige HTML bestand
+
+-------------------------------------------------
+CSS in HTML document
+Voordelen:
+* Hogere prioriteit dan een extern CSS bestand
+* Er kan met selectors gewerkt worden
+* Makkelijk aanpasbaar
+Nadelen:
+* Enkel van toepassing op het huidige HTML bestand
+
+-------------------------------------------------
+Extern CSS bestand
+Voordelen:
+* Stijl en semantiek zijn volledig gescheiden
+* Er kan met selectors gewerkt worden
+* Makkelijk aanpasbaar
+* Hetzelfde CSS bestand kan toegepast worden op meerdere HTML bestanden
+* Er kunnen meerdere CSS bestanden aan een HTML bestand toegevoegd worden, bijvoorbeeld om een andere stijl toe te passen voor bepaalde gebruikers of apparaten
