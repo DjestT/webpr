@@ -1,0 +1,59 @@
+﻿1.
+Een attribuut selector wordt in combinatie met een tag gebruikt om die tags aan te spreken waarvoor de waarde van het attribuut matcht.
+Voorbeelden:
+* a[href="#"] selecteerd alle <a> tags waarvoor het href attribuut exact de waarde "#" heeft
+* video[width] selecteert alle <video> tags die een width attribuut hebben, ongeacht de waarde
+Met de attribuut selector kunnen we ook de class selector simuleren.
+De attribuut selector *[class="green"] en de class selector .green selecteren dezelfde tags.
+
+-------------------------------------------------
+2.
+Door gebruik te maken van een CSS reset kit kunnen inconsistenties tussen verschillende browsers verminderd worden.
+Deze inconsistenties hebben vooral te maken met de verschillende defaultwaarden die browsers geven aan hun attributen.
+Na de reset kan de ontwerper zelf stijlen toepassen op het document.
+
+Voorbeelden van verschillen tussen default styles tussen Firefox en Chrome:
+* Firefox geeft <td> een padding van 1px, Chrome bewerkt de padding niet
+* Chrome geeft <table> de waarde gray aan het attribuut bordor-color, Firefox doet dit niet
+
+Bronnen:
+Firefox: http://h5c3.de/inhalte/firefox-default-css/
+Chrome: https://cs.chromium.org/chromium/src/third_party/WebKit/Source/core/css/html.css?utm_source=ponyfoo+weekly&utm_medium=email&utm_campaign=issue-15
+
+-------------------------------------------------
+3.
+a:visited verandert enkel het attribuut color.
+a verandert text-decoration, color en background
+
+-------------------------------------------------
+4.
+Als er na een declaratie !important staat, dan heeft deze voorrang op declaraties zonder de !important.
+Als er meerdere keren !important wordt gebruikt, heeft de laatstvermeldde voorrang.
+
+Bronnen: 
+https://www.w3.org/TR/CSS2/cascade.html#important-rules
+
+-------------------------------------------------
+5.
+* Specified value: 
+Deze waarde wordt als volgt bepaald:
+1) De waarde van de stylesheet
+2) Anders, als de waarde 'inherit' is, neem de computed value van de parent
+3) Anders, neem de defaultwaarde
+
+* Computed value: 
+Na de specificatie kunnen attributen een absolute waarde hebben of een relatieve waarde.
+Als de waarde absoluut is, hoeven er geen verdere berekeningen gedaan worden.
+Als de waarde relatief is, dan hangt deze waarde af van de waarde van een ander attribuut.
+Deze wordt dan na berekening omgezet in een absolute waarde.
+
+* Actual value:
+Het is mogelijk dat een computed value niet onmiddelijk gebruikt kan worden door de user agent.
+In dit geval zal een benadering genomen worden en verkrijgen we de actual value.
+
+Bronnen: 
+https://www.w3.org/TR/2011/REC-CSS2-20110607/cascade.html#value-stages
+http://www.w3resource.com/css/assigning-property-values-cascading-inheritance/css-assigning-property-values-cascading-inheritance.php
+
+-------------------------------------------------
+6.
