@@ -1,0 +1,38 @@
+1.
+
+
+-------------------------------------------------
+2.
+Als een element of attribuut deprecated is, dan betekent het dat deze wel nog gebruikt kunnen worden, maar dat het niet aanbevolen is.
+De voornaamste reden hiervoor is dat het meestal stijlgerelateerde tags zijn en dat ze beter afgehandeld worden via CSS.
+
+Voorbeelden:
+<big>	Grote tekst
+<u>		Onderlijnde tekst
+<font>	Definiëerd een font, lettertypegrootte en lettertypekleur
+
+-------------------------------------------------
+3.
+<video> en <audio> in HTML5:
+
+<!-- Video tag with attributes -->
+<video attributes>
+	<!-- Different sources for the video tag -->
+	<!-- Browser will check each source until it has found one that's the browser supports -->
+	<source scr="" type="">
+	<source scr="" type="">
+	<!-- Default text if the browser doesn't support the <video> tag -->
+	Your browser does not support the video tag.
+</video>
+
+De werkwijze is analoog voor de <audio> tag.
+
+-------------------------------------------------
+4.
+Veel websites geven geen alt attribuut voor het <img> tag
+
+-------------------------------------------------
+6.
+Als een browser een tag niet ondersteunt, wordt deze beschouwd als een inline element. Het is mogelijk om voor deze browsers de tag als het ware aan te maken door volgende script in de <head> te plaatsen:
+
+<script>document.createElement("newTag")</script>
