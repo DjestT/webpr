@@ -55,3 +55,8 @@ body {
     padding: 20px;
     margin: 20px;
 }
+
+#container {
+    border: 1px solid #000000;
+    padding: 4px;
+}

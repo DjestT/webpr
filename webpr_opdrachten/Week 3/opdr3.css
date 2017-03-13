@@ -1,0 +1,39 @@
+﻿.images
+{
+    position: relative;
+}
+
+.images img
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+#img1
+{
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+#img2
+{
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+#img3
+{
+    top: 200px;
+    left: 200px;
+    z-index: 2;
+}
+
+#img4
+{
+    top: 300px;
+    left: 300px;
+    z-index: 3;
+}
