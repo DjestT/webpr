@@ -1,0 +1,70 @@
+﻿1.
+1) JavaScript is een dynamisch geschreven taal en Java is een statisch geschreven taal.
+In een statisch geschreven taal worden variabelen gedeclareerd met hun type bij de compilatie.
+Hierdoor kunnen deze variabelen ook enkel waardes aanvaarden van hetzelfde type.
+In een dynamisch geschreven taal kan een variabele waardes van elk type aannemen.
+Als er variabelen met elkaar vergeleken moeten worden, dan voert JavaScript type coercion uit.
+
+2) Java is een gecompileerde programmeertaal, JavaScript is een geïnterpreteerde scripting taal.
+Hierbij wordt Java eerst gecompileerd in bytecode en uitgevoerd op een virtual machine,
+terwijl JavaScript onmiddellijk geïnterpreteerd wordt door de browser in de syntax waarin het geschreven is.
+
+3) De scope van een variabele in Java is enkel in het blok waarin het gedeclareerd is.
+De scope van een variabele in JavaScript is in de functie waarin het gedeclareerd is.
+
+Bronnen:
+http://javarevisited.blogspot.be/2015/03/10-difference-between-java-and-javascript-programming.html
+https://www.upwork.com/hiring/development/java-vs-javascript/
+
+-------------------------------------------------
+2. 
+Als gebruikersinput enkel client-side via JavaScript gecontroleerd wordt, dan kunnen sommige gebruikers
+ongeldige data injecteren die toch gevalideerd wordt via de JavaScript controle. Ook kan het mogelijk zijn dat
+er gebruikers zijn die een browser gebruiken die JavaScript niet ondersteunt.
+
+Als er naast de server-side controle ook client-side controle gebruikt wordt, dan kan er bij de client-side
+onmiddelijk feedback gegeven worden op de input voordat het gepost wordt.
+
+Bronnen:
+http://stackoverflow.com/questions/162159/javascript-client-side-vs-server-side-validation
+https://www.quora.com/Is-it-better-design-to-validate-HTML-form-data-client-side-with-JavaScript-or-server-side
+
+-------------------------------------------------
+3. 
+Een variabele is undefined als er nog geen waarde aan toegekend is. 
+In een booleaanse context is het resultaat false.
+Bij bewerkingen met integers is het resultaat NaN.
+Bij stringconcatenatie wordt de string "undefined" gebruikt.
+NaN betekent Not-a-Number en wordt als resultaat gegeven wanneer een wiskundige bewerking onmogelijk is.
+
+-------------------------------------------------
+4. 
+Wanneer er in JavaScript == gebruikt wordt en de types van beide variabelen komen niet met elkaar overeen,
+dan wordt er eerst geprobeerd om het type van 1 van de variabelen naar het type van de andere variabele te 
+converteren. Vervolgens wordt dan de booleaanse uitdrukking geëvalueerd.
+
+Wanneer er in JavaScript === gebruikt wordt, dan wordt er eerst gecontroleerd of de types van beide variabelen
+met elkaar overeenkomen. Als dit niet het geval is, wordt er false teruggegeven. Anders wordt de booleaanse 
+uitdrukking geëvalueerd.
+
+Bronnen:
+http://www.java67.com/2013/07/difference-between-equality-strict-vs-operator-in-JavaScript-Interview-Question.html
+
+-------------------------------------------------
+5. 
+document.write(string) schrijft HTML expressies of JavaScript code in het document.
+Dit kan beter niet gebruikt worden om een document dynamisch te vullen, want als het gebruikt wordt nadat
+het HTML document volledig geladen is, wordt alle bestaande HTML eerst verwijdert. 
+
+Het is beter om eerst het element aan te spreken dat je nodig hebt via document.getElementById() en
+eventueel verder te navigeren d.m.v. parentNode(), previousSibling(), nextSibling(), firstChild() en lastChild()
+en tenslotte functies te gebruiken zoals appendChild() of removeChild().
+Als appendChild() gebruikt wordt om een nieuw element toe te voegen, dan wordt het nieuwe element gecreërd via
+createElement() en createTextNode().
+
+Er kan ook gewerkt worden met .innerHTML.
+
+Om informatie uit te schrijven naar de debug output wordt console.log() of console.error() gebruikt.
+
+-------------------------------------------------
+6.
