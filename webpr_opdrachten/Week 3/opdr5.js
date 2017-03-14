@@ -48,7 +48,7 @@ function checkLastName(name)
 {
     if (name.length == 0) {
         isValid = false;
-        message += "Vul een achternaamnaam in</br>";
+        message += "Vul een achternaam in</br>";
     }
 
     for (var i = 0; i < invalidChars.length; ++i) {

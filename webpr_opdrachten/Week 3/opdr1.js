@@ -4,7 +4,7 @@
 }
 
 var array = ["Een", "Twee", "Drie", "Vier", "Vijf", "Zes", "Zeven", "Acht", "Negen", "Tien"];
-array.sort(function (a, b) { sortLength(a, b) });
+array.sort(function (a, b) { return sortLength(a, b); });
 
 var targetNode = document.getElementById("inhoud");
 var textNode = document.createTextNode(array);
