@@ -1,0 +1,52 @@
+﻿1.
+Een web server weet of een document PHP code kan bevatten door naar de extensie te kijken.
+Als de extensie .php is, kan het document PHP code bevatten.
+
+Een client kan zien of een pagina gegenereerd werd door PHP door naar de extensie .php te kijken,
+of door naar de HTTP response header te kijken.
+
+Bronnen:
+https://www.thoughtco.com/do-i-have-php-2694204
+http://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome
+-------------------------------------------------
+2.
+Als een string vergeleken wordt met een nummer, dan wordt de string als volgt geconverteerd.
+Als de string geen 'e' of 'E' bevat en het getal zou passen binnen de grensen van integers,
+dan wordt geconverteerd naar een integer. Anders wordt het geconverteerd naar een float.
+
+Als de string niet start met een getal, dan krijgt het de waarde 0. 
+Anders wordt het initiële numeriek gedeelte van de string genomen.
+Dit gedeelte is 1 of meerdere getallen en optioneel gevolgd door een exponent.
+De exponent is een 'e' of 'E' gevolgd door 1 of meerdere getallen.
+
+Bronnen:
+http://il.php.net/manual/en/language.types.string.php#language.types.string.conversion
+-------------------------------------------------
+3.
+Een array wordt in PHP gezien als een map.
+Hierbij kan de waarde eender welk type zijn, dus een array kan waardes van verschillende types bevatten,
+en de key kan enkel van het type string of integer zijn.
+
+Bronnen:
+http://il.php.net/manual/en/language.types.array.php
+-------------------------------------------------
+4.
+Een Cookie is een klein stuk data dat verzonden wordt van een website en opgeslagen wordt op de computer van de gebruiker.
+Voorbeelden van gegevens die een cookie kan bewaren zijn stateful information (zoals toegevoegde items in een winkelkar op een online winkel) 
+en gebruikersactiviteit in de browser. 
+Authentication cookies worden door web servers gebruikt om te weten of een gebruiker wel of niet ingelogd is en
+met welk account deze ingelogd is. De veiligheid van deze cookies hangt af van de veiligheid van de website en web browser,
+en van het feit of de gegevens in de cookies geëncrypteerd is.
+
+Bronnen:
+https://en.wikipedia.org/wiki/HTTP_cookie
+-------------------------------------------------
+5.
+Als een AJAX request synchroon uitgevoerd wordt, dan wordt de code van de pagina die AJAX oproept eerst uitgevoerd voordat eerst uitgevoerd
+voordat de rest van de originele pagina uitgevoerd wordt. Bij een asynchrone request wordt er een callback gestuurd om te melden dat
+de request klaar is. Hierdoor kan de browser verder werken terwijl de request behandeld wordt.
+
+In het algemeen worden asynchrone request verkozen. Synchrone request kan handig zijn als bepaalde data eerst geladen moet worden.
+
+Bronnen:
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
