@@ -51,13 +51,82 @@ table {
 
 /* Reset ends here */
 
+/* General page layout */
 body {
-    background: #45b9b2;
+	background: #33cccc;
+	font: Verdana, Arial, Helvetica, sans-serif;
 }
 
 #container {
     margin: auto;
     width: 80%;
     background: #ffffff;
-    padding: 20px;
+	/* padding: 20px;  */
+}
+
+/* Container-header layout */
+
+#container-header {
+	background: #cccccc;
+	padding: 20px;
+}
+
+#logo {
+	float: left;
+}
+
+#navigation ul {
+	list-style-type: none;    
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;    
+	text-align:center;
+}
+
+#navigation li {
+	float: left;
+}
+
+#navigation a {
+	display: block;
+	width: 60px;
+}
+
+#navigation a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 3px 12px 3px 8px; 
+	background-color: #66ff66;
+	color: #000000;
+	border-top: 1px solid #aaaaaa;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #aaaaaa;
+}
+
+#navigation a:hover {
+	background-color: #33aaaa;
+}
+
+#navigation a:active {
+	padding: 2px 13px 4px 7px;
+	background-color: #6666ff;
+	color: #eeeeee;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	border-left: 1px solid #666666;
+}
+
+#search {
+	clear: left;
+	align-content: center;
+	padding-top: 20px;
+}
+
+/* Main-container layout  */
+
+#main-container {
+	padding: 20px;
 }
