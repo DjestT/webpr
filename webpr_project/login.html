@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Template</title>
+        <link rel="stylesheet" type="text/css" href="css/StyleSheet.css"/>
+    </head>
+    
+    <body>
+    <!-- Page container -->
+    <div id="container">
+        <!-- Header -->
+        <header class="flex-column-container">
+            <div id="header-head" class="flex align-horizontal-padding">
+                <!-- Web info -->
+                <div id="web-info" class="flex">
+                    <span id="web-name"><a href="home.html">Web name</a></span>
+                </div>
+                <!-- Header menu -->
+                <nav id="header-menu" class="flex">
+                    <ul class="nav-ul">
+                        <li><a href="login.html">Inloggen</a></li>
+                        <li><a href="#">Meldingen</a></li>
+                        <li><a href="#">Plaats advertentie</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-tail" class="clear align-horizontal-padding">
+            </div>
+        </header>
+
+        <!-- Main body -->
+        <div id="main-container" class="flex-column-container align-horizontal-padding">
+            <nav id="dialog" class="flex">
+                <ul class="nav-ul">
+                    <li><a href="home.html"><span>Home</span></a></li>
+                    <li><span class="active-dialog">> Login<span></li>
+                </ul>
+            </nav>
+            <div id="content" class="flex">
+                <!-- Main content -->
+                <section class="main-content">
+                    <div id="account-container" class="flex">
+                        <div class="account-block" id="account-login-block">
+                            <form id="account-login-form" method="POST" action="#">
+                                <h1 class="block-header">Inloggen</h1>
+                                <label class="form-label">E-mailadres</label>
+                                <div class="form-field"><input type="email" name="email"></div>
+                                <label class="form-label">Wachtwoord</label>
+                                <div class="form-field"><input type="password" name="password" autocomplete="off"></div>
+                                <input id="login-button" type="submit" value="Inloggen">
+                            </form>
+                        </div>
+                        <div class="account-block" id="account-create-block">
+                            <h1 class="block-header">Registreren</h1>
+                            <p>Om in te loggen heb je een account nodig. Met een account kan je:</p>
+                            <ul class="bulleted">
+                                <li>Advertenties plaatsen</li>
+                                <li>Meldingen ontvangen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Footer
+        </footer>
+    </div>
+    </body>
+</html>

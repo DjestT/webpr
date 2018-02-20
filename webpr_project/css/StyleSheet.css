@@ -1,0 +1,269 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset default values */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset ends here */
+
+/* General page layout */
+html {
+	font-size: 105%;
+}
+
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+}
+
+span {
+	
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+h1 {
+	font-size: 1.7rem;
+	 font-weight: bold; 
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#container {
+    margin: auto;
+    /* width: 80%; */
+    background: #ffffff;
+}
+
+.flex {
+	display: flex;
+	/* align-items: center; */
+}
+
+.flex-column-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-ul {
+	list-style-type: none;    
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+
+.clear {
+	clear: both;
+}
+
+.align-horizontal-padding {
+	padding: 10px 15%;
+}
+
+.left-column {
+	float: left;
+	padding: 10px;
+	border-top: 1px solid #aaaaaa;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #aaaaaa;
+}
+
+.main-content {
+	padding: 10px;
+}
+
+.block-header {
+	margin-bottom: 20px;
+}
+
+.bulleted {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+/* Container-header layout */
+
+#header-head {
+	/* padding: 20px 20px 0px; */
+	background: #ffffff; 
+	justify-content: space-between;
+}
+
+#web-info {
+	align-items: center;
+}
+
+#web-info a {
+	text-decoration: none;
+}
+
+#header-tail {
+	background: #66cc66; 
+}
+
+/* Header-menu layout */
+
+#header-menu li {
+	float: right;
+}
+
+#header-menu a {
+	display: block;
+}
+
+#header-menu a:link, #header-menu a:visited {
+	text-decoration: none;
+	display: block;
+	padding: 3px 12px 3px 8px; 
+	background-color: #66ff66;
+	color: #000000;
+	border-top: 1px solid #aaaaaa;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #aaaaaa;
+}
+
+#header-menu a:hover {
+	background-color: #33aaaa;
+}
+
+#header-menu a:active {
+	padding: 2px 13px 4px 7px;
+	background-color: #6666ff;
+	color: #eeeeee;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	border-left: 1px solid #666666;
+}
+
+#search {
+	align-content: center;
+}
+
+/* Main-container layout */
+
+#main-container {
+	background: #ffeebb;
+}
+
+/* Dialog layout */
+
+#dialog li {
+	float: left;
+	padding: 4px;
+	font-size: 1.1rem; 
+}
+
+#dialog a:link, #dialog a:visited {
+	text-decoration: none;
+	color: #116db4;
+}
+
+#dialog a:hover {
+	color: #33aaaa;
+}
+
+.active-dialog {
+	 font-weight: bold; 
+}
+
+/* Categories layout */
+
+#categories ul {
+	padding-top: 10px;
+}
+
+#categories li {
+	padding: 6px;
+}
+
+ #categories a:link, #categories a:visited { 
+	text-decoration: none;
+	color: #116db4;
+}
+
+#categories a:hover {
+	color: #33aaaa;
+}
+
+/* Login/register layout */
+
+#account-container {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.account-block {
+	padding: 20px;
+	background: #ffffff;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	border-left: 1px solid #666666;
+}
+
+.form-label {
+	margin-top: 12px;
+	margin-bottom: 4px;
+	display: block;
+	font-size: 1.1rem;
+}
+
+.form-field {
+	margin-bottom: 10px;
+}
+
+#account-create-block {
+	margin-left: 10px;
+}
